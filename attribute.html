@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+    <style>
+        a[target="_blank"] {
+            color: red;
+        }
+        /*
+        p[title~="belajar"]{
+            color: red;
+        }
+        */
+
+        /*
+        p[title|="belajar"]{
+            color: red;
+        }
+        */
+
+        /*
+        p[title^="belajar"]{
+            color: red;
+        }
+        */
+        /*
+        p[title$="belajar"]{
+            color: red;
+        }
+        */
+        /*
+        p[title*="belajar"]{
+            color: red;
+        }
+        */
+
+        [title*="belajar"]{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="" target="_blank">Contoh 1</a>
+    <a href="" target="">Contoh 2</a>
+    <a href="" target="_self">Contoh 3</a>
+    <a href="" target="">Contoh 4</a>
+
+    <p title="belajar">Ini Dipilih</p>
+    <p title="belajar koding">Ini Dipilih</p>
+    <p title="belajarkoding">Ini tidak Dipilih</p>
+    <p title="belajar-kode">Ini tidak Dipilih</p>
+    <p title="kode belajar">Ini tidak Dipilih</p>
+
+    <span title="pemrograman belajar">ini Contoh Span</span>
+
+</body>
+</html>
